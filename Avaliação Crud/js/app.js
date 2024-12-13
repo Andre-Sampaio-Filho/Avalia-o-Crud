@@ -33,7 +33,7 @@ function salvarEstilo() {
     };
 
     mostrarLoading();
-    fetch('http://localhost:3000/estilo', {
+    fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/estilo', {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -89,10 +89,9 @@ function salvar() {
         idEstilo: idEstilo
     };
 
-    const url = clienteAlterado == null ? 'http://localhost:3000/body-builder/' : 'http://localhost:3000/body-builder/' + clienteAlterado.id;
     const method = clienteAlterado == null ? 'POST' : 'PUT';
 
-    fetch(url, {
+    fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/body-builder', {
         method: method,
         mode: 'cors',
         headers: {
@@ -240,7 +239,7 @@ function ocultarModalEstilo() {
 
 function excluir(id) {
     if (confirm("Tem certeza que deseja excluir?")) {
-        fetch('http://localhost:3000/body-builder/' + id, {
+        fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/body-builder/' + id, {
             method: 'DELETE',
             mode: 'cors',
             headers: {
@@ -274,7 +273,7 @@ function alterar(id) {
 }
 
 function carregarClientes() {
-    fetch('http://localhost:3000/body-builder', {
+    fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/body-builder', {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -362,7 +361,7 @@ function ordenarTabela(campo) {
 function Filtrar() {
     const termoBusca = document.getElementById("busca").value; // Obtém o texto digitado
 
-    fetch(`http://localhost:3000/body-builder?busca=${encodeURIComponent(termoBusca)}`, {
+    fetch(`https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/body-builder?busca=${encodeURIComponent(termoBusca)}`, {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -379,7 +378,7 @@ function Filtrar() {
         });
 }
 function carregarAcademias() {
-    fetch('http://localhost:3000/gym', {
+    fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/gym', {
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -406,7 +405,7 @@ function atualizarListaAcademias() {
 }
 
 function carregarEstilos() {
-    fetch('http://localhost:3000/estilo', {
+    fetch('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/estilo', {
         method: 'GET',
         mode: 'cors',
         headers: {
