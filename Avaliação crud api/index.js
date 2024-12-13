@@ -1,8 +1,8 @@
 const express = require('express')
 const cors = require('cors')
-const { BodyBuilder } = require('./src/bodybuilder/bodybuilder.entity')
-const { Gym } = require('./src/gym/gym.entity')
-const { Estilo } = require('./src/Estilo/estilo.entity')
+const { BodyBuilder } = require('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/src/bodybuilder/bodybuilder.entity')
+const { Gym } = require('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/src/gym/gym.entity')
+const { Estilo } = require('https://avaliacao-crud.vercel.app/?vercelToolbarCode=sUGmyy-JGJERvEH/src/Estilo/estilo.entity')
 const app = express()
 app.use(cors())
 const port = 3000
